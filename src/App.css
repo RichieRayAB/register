@@ -1,22 +1,21 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
+body{
+  background-color: #00ccff;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.login-form{
+  width: 80%;
+ margin-top: 90px;
+ margin-left: 100px ;
+ margin-right: 100px;
+ padding: 80px;
+  background-color: #fff;
+  
 }
-
-.App-link {
-  color: #09d3ac;
+.btn-red{
+  background-color: crimson;
+}
+.inputStyle{
+  border: none;
+ 
+  border-bottom: 1px solid #000;
 }
