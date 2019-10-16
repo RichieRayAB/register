@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {Button, Form, FormGroup, Label, Input} from 
 'reactstrap';
 import './App.css';
+
 class FormComp extends Component {
     render(){
     return (
@@ -17,6 +18,8 @@ class FormComp extends Component {
         </FormGroup>
         <Button className="btn-red">Create</Button>
       </Form>
+      
+      
       
     );
   }

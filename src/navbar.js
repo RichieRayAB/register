@@ -1,30 +1,21 @@
+"Use Strict"
 import React, {Component} from 'react';
-import {Nav, Navitem, Navbar, Badge} from 'reactstrap';
+import './navbar.css';
 
 
-class Navigation extends Component{
+
+class Menu extends Component{
     render(){
         return(
-            <Navbar inverse fixedTop collapseOnSelect expand="lg" bg="dark" variant="dark">
-            <Navbar.Brand href="/">React-Bootstrap</Navbar.Brand>
-            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-            <Navbar.Collapse id="responsive-navbar-nav">
-              <Nav className="mr-auto">
-                <Nav.Link href="/about">About</Nav.Link>
-                <Nav.Link href="/contacts">Contacts</Nav.Link>
-              </Nav>
-              <Nav>
-                  <Nav pullRight>
-                <Nav.Link href="/admin">Admin</Nav.Link>
-                <Nav.Link eventKey={2} href="/cart">
-                  Your Cart
-                </Nav.Link>
-              </Nav>
-              </Nav>
-            </Navbar.Collapse>
-          </Navbar>
-        );
+            <ul>
+  <li><a href="/home">Home</a></li>
+  <li><a href="/singinform.js">Login</a></li>
+  <li><a href="/signupform.js">Sing Up</a></li>
+  <li ><a className="active" href="#about">About</a></li>
+</ul>
+        );   
     }
+
 }
 
-export default Navigation;
+export default Menu

@@ -1,16 +1,18 @@
 import React, {Component} from 'react';
 import './App.css';
-import {Navigation} from './navbar.js';
 import FormComp from'./formcomponent.js';
-import {Button, Form, FormGroup, Label, Input} from 
-'reactstrap';
+import mario from './mario.gif';
+
+import Menu from './navbar.js';
 
 class App extends Component{
   render(){
     return(
+      
 <div className="App">
-   <Navigation /> 
+   <Menu />
     <FormComp /> 
+    <img src={mario} className="img" />
     </div>
     );
   }
